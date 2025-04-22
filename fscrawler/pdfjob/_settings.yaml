@@ -1,0 +1,18 @@
+name: "pdfjob"
+
+fs:
+  url: "/data"
+  include_ext: ["pdf"]
+  recursive: true
+
+elasticsearch:
+  nodes:
+    - url: "http://elasticsearch:9200"
+  index: "pdfs"
+  bulk_size: 100
+  flush_interval: "5s"
+
+pipeline: "attachment"
+
+ocr:
+  enabled: false

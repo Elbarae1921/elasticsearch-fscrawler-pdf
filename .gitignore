@@ -1,0 +1,4 @@
+fscrawler/*
+!fscrawler/pdfjob
+fscrawler/pdfjob/*
+!fscrawler/pdfjob/_settings.yaml
